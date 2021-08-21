@@ -20,51 +20,52 @@ function getName(){
     });
     return nameoftheuser;
 }
-function setUpChat(){
-    const user = auth.currentUser;
-    getName();
-    let html='';
-    db1.ref('chats').on('value',function(snapshot){
-        snapshot.forEach(element => {
-            if(element.val().email===user.email){
-                const currdata=`
-                <div class="scale">
-                <div class="dialogue-box1">
-                    <div class="chat-text1">
-                        <div class="message-container1">
-                           <div class="text1">${element.val().message}</div>
-                           <div class="time1"><p>${element.val().time}</p></div>
-                        </div>
-                   
-                    </div>
-                </div>
-            </div>
-                `;
-                html+=currdata;
-            }
-            else{
-                const currdata=`
-                <div class="scale">
-                <div class="dialogue-box">
-                    <div class="chat-text">
-                        <div class="nameOfSender">${getName()}</div>
-                        <div class="message-container">
-                           <div class="text">${element.val().message}</div>
-                           <div class="time"><p>${element.val().time}</p></div>
-                        </div>
-                   
-                    </div>
-                </div>
-            </div>
-                `;
-                html+=currdata;
-            }
-            
-        });
-        chatData.innerHTML=html;
-    });
-}
 
+db1.ref('chats').on("child_added",function(snapshot){
+    const user = auth.currentUser;
+    if(user)
+    { getName();
+     let html='';
+     db1.ref('chats').on('value',function(snapshot){
+         snapshot.forEach(element => {
+             if(element.val().email===user.email){
+                 const currdata=`
+                 <div class="scale">
+                 <div class="dialogue-box1">
+                     <div class="chat-text1">
+                         <div class="message-container1">
+                            <div class="text1">${element.val().message}</div>
+                            <div class="time1"><p>${element.val().time}</p></div>
+                         </div>
+                    
+                     </div>
+                 </div>
+             </div>
+                 `;
+                 html+=currdata;
+             }
+             else{
+                 const currdata=`
+                 <div class="scale">
+                 <div class="dialogue-box">
+                     <div class="chat-text">
+                         <div class="nameOfSender">${getName()}</div>
+                         <div class="message-container">
+                            <div class="text">${element.val().message}</div>
+                            <div class="time"><p>${element.val().time}</p></div>
+                         </div>
+                    
+                     </div>
+                 </div>
+             </div>
+                 `;
+                 html+=currdata;
+             }
+             
+         });
+         chatData.innerHTML=html;
+     });}
+});
 function signout(){
     const loggedoutmessage=`
     <p style="color: red; font-size:25px; text-align: center; margin-top: 50px; font-weight: 900;margin-left:33%; ">Logged out successfully</p>
@@ -84,7 +85,7 @@ function sendMessage(){
          time:get_time_now(),
          email:user.email,
      });
-     setUpChat();}
+   }
 }
 
 document.getElementById('btn').addEventListener('click',e=>{
