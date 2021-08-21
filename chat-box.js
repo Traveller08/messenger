@@ -14,15 +14,15 @@ function get_time_now(){
 }
 function getName(){
     const user = auth.currentUser;
-    
+    var nameoftheuser="";
     db1.ref('userInfo/'+user.uid).on('value',function(snapshot){
-        console.log(snapshot.val().fname);
-        return snapshot.val().fname;
+        nameoftheuser= snapshot.val().fname;
     });
+    return nameoftheuser;
 }
 function setUpChat(){
     const user = auth.currentUser;
-    
+    getName();
     let html='';
     db1.ref('chats').on('value',function(snapshot){
         snapshot.forEach(element => {
