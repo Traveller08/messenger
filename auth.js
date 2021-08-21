@@ -47,17 +47,15 @@ document.getElementById('signup-submit').addEventListener('click',e=>{
     }
   else{
       auth.createUserWithEmailAndPassword(email,password).then(cred=>{    
-            document.getElementById('form-signup').reset();
             if(confirm("Account created successfully ..\n \t login  to continue")){
               auth.signInWithEmailAndPassword(email,password).then(cred=>{
                 const user = auth.currentUser;
-                db1.ref('userInfo/'+user.uid).push({
-                   fname:fname.value,
-                   username:username.value,
-                   dob:dob.value,
+                db1.ref('userInfo/'+user.uid).set({
+                   fname:document.getElementById('fname').value,
+                   username:document.getElementById('username').value,
+                   dob:document.getElementById('dob').value,
                    gender:get_gender(),
-                });
-                 document.getElementById('form-signup').reset();
+                },false);
               });
             }
             else{

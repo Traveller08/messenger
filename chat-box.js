@@ -14,7 +14,9 @@ function get_time_now(){
 }
 function getName(){
     const user = auth.currentUser;
+    
     db1.ref('userInfo/'+user.uid).on('value',function(snapshot){
+        console.log(snapshot.val().fname);
         return snapshot.val().fname;
     });
 }
@@ -73,7 +75,7 @@ function signout(){
 function sendMessage(){
     const currdata=document.getElementById('input-data').value;
     const user = auth.currentUser;
-    const messageCurr=`
+    if(user){const messageCurr=`
     <div class="chat-text"> ${currdata}</div>
       `;
       const time = new Date();
@@ -82,7 +84,7 @@ function sendMessage(){
          time:get_time_now(),
          email:user.email,
      });
-     setUpChat();
+     setUpChat();}
 }
 
 document.getElementById('btn').addEventListener('click',e=>{
