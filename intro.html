@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+          }
+          body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+          }
+          .mySlides {
+            display: none;
+          }
+          img {
+            vertical-align: middle;
+          }
+          body {
+            /* background: linear-gradient(#5fd1e7 5%,#18BFF5 5%); */
+            background-image: radial-gradient(#c7eaee 50%, #b1ecff);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 635px;
+            height: 635px;
+          }
+          /*    linear-gradient(#D3ED35, #74C912 )
+                /* Slideshow container */
+          .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            width: 900px;
+            margin: auto;
+            margin-top: 5%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 20px;
+            background: radial-gradient(#d6f1f1 40%, #b4e9fd);
+          }
+          img {
+            border-radius: 50px;
+            padding: 10px;
+          }
+          /* Next & previous buttons */
+          .prev,
+          .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+        
+          /* Position the "next button" to the right */
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+        
+          /* On hover, add a black background color with a little bit see-through */
+          .prev:hover,
+          .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+        
+          /* Caption text */
+          .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+          }
+        
+          /* The dots/bullets/indicators */
+          .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: rgb(29, 238, 147);
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+        
+          .active,
+          .dot:hover {
+            background-color: #089d32;
+          }
+        
+          /* Fading animation */
+          .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+          .text {
+            color: black;
+          }
+        
+          @-webkit-keyframes fade {
+            from {
+              opacity: 0.4;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+        
+          @keyframes fade {
+            from {
+              opacity: 0.4;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+        
+          /* On smaller screens, decrease text size */
+          @media only screen and (max-width: 300px) {
+            .prev,
+            .next,
+            .text {
+              font-size: 14px;
+            }
+          }
+          #gettingStarted {
+            color: #089d32;
+            background-color: white;
+            border: 1px solid #089d32 ;
+            border-radius: 25px;
+            font-size: 20px;
+            font-weight: 300;
+            width: 200px;
+            max-width: 200px;
+            min-width: 200px;
+            padding: 10px;
+           
+          }
+        
+          #gettingStarted:hover{
+            color: white;
+            background-color: #089d32;
+             font-weight: 400;
+            box-shadow: 0 0 15px #2ba805;
+            cursor: pointer;
+            text-shadow: 0 0 1px #0fa414, 0 0 10px #fcfcff;
+            transition: transform 2;
+            transform: translate(5px,5px);
+          }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div style="width: 100%; height: 575px; text-align: center;" >
+                <img src="logo.png" alt="chat with friends" height="300px" width="300px" style="margin-top: 10px;">
+                <p style="font-size: 30px; font-weight:600;">
+                   Hello & Welcome to CheemsTalk
+                </p>
+                <p>
+                    It is a real time messenger app. Where you can...
+                </p>
+           </div>
+           <div class="text">From Cheems community</div>
+     </div>
+        <div class="mySlides fade">
+             <div style="width: 100%; height: 575px; text-align: center;" >
+                 <img src="teen-friends-chat-on-phone-friendly-vector-120892071.jpg" alt="chat with friends" height="400px" width="400px">
+                <p class="notes">
+                    Chat with your friends 
+                </p>
+            </div>
+            <div class="text">From Cheems community</div>
+      </div>
+
+      <div class="mySlides fade">
+            <div style="width: 100%; height: 575px;text-align: center;">
+                <img src="Online_party__Designed_by_pikisuperstar_Freepik_-1200x900-cropped.jpg" alt="listen with your friends" height="400px" width="400px">
+                <p class="notes">
+                    Listen to your favourite music now with your friends 
+                </p>
+            </div>
+            <div class="text">From Cheems community</div>
+      </div>
+
+      <div class="mySlides fade">
+            <div style="width: 100%; height: 575px;text-align: center;">
+                <img src="happy-people-702x336.jpg" alt="Enjoy" height="400px" width="400px"/>
+                <p class="notes">
+                    Connect to the world, make friends and enjoy.
+                </p>
+                <button id="gettingStarted" onclick="posChange()">Get Started</button>
+            </div>
+            <div class="text">From Cheems community</div>
+      </div>
+
+      <a class="prev" id="prevBtn" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" id="nextBtn" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  <script>
+    function posChange(){
+        location.replace("login.html");
+      }
+       var slideIndex = 1;
+       showSlides(slideIndex);
+    
+       function plusSlides(n) {
+         showSlides((slideIndex += n));
+       }
+    
+       function currentSlide(n) {
+         showSlides((slideIndex = n));
+       }
+    
+       function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {
+           slideIndex = 1;
+         }
+         if (n < 1) {
+           slideIndex = slides.length;
+         }
+         for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex - 1].style.display = "block";
+         dots[slideIndex - 1].className += " active";
+       }
+  </script>
+</body>
+</html>

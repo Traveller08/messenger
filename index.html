@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      /* background: linear-gradient(#5fd1e7 5%,#18BFF5 5%); */
+      background-image: radial-gradient(#c7eaee 50%,#b1ecff);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh; 
+  }
+  </style>  
+
+</head>
+<body>
+    <div class="containerName">
+
+      <div id="logo-container"><img src="logo.png" alt="" id="logo" style="opacity: 100%; border-radius: 40%; border:#b4e9fd;"></div>
+       <div class="progresscontainer">
+          <div class="progress-bar"></div>
+        </div>
+      <div id="logoText-container">
+       <p class="logoText" id="C">C</p>
+       <p class="logoText" id="H">h</p>
+       <p class="logoText" id="E1">e</p>
+       <p class="logoText" id="E2">e</p>
+       <p class="logoText" id="M">m</p>
+       <p class="logoText" id="S">s</p>
+       <p class="logoText" id="T">t</p>
+       <p class="logoText" id="A">a</p>
+       <p class="logoText" id="L">l</p>
+       <p class="logoText" id="K1">k</p>
+       </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAGSxDrScQ6WQQcK-KcBJdWWEiYx0R9zQQ",
+    authDomain: "project1-e54d9.firebaseapp.com",
+    projectId: "project1-e54d9",
+    storageBucket: "project1-e54d9.appspot.com",
+    messagingSenderId: "704925816487",
+    appId: "1:704925816487:web:08c83e9b9edd3d04b56d82"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db =firebase.firestore();
+  const auth = firebase.auth();
+  
+</script>
+<script src="script.js"></script>
+</html>

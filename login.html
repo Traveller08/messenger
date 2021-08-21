@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginStyle.css">
+    <style>
+        html {
+            height: 100%;
+          }
+      </style>  
+</head>
+<body>
+    <div class="page-container">
+        <div class="nav-bar">
+            <div class="left-nav">
+                <div class="nav-logo">
+                    <img src="logo.png" alt="logo" id="logo-at-nav" height="80px" width="80px">
+                 </div>
+                 <div class="logo-name">
+                     <p>CheemsTalk</p>
+                 </div>
+            </div>
+            <div class="right-nav">
+                <div class="nav-btns">
+                  <p>Home</p>
+                </div>
+                <div class="nav-btns">
+                  <p>About us</p>
+                </div>
+                <div class="nav-btns">
+                <p id="sign-out" onclick="signout()">
+                    Sign out
+                </p>
+                </div>
+                <div class="nav-btns">
+                    <p id="sign-in-text">
+                        Sign in
+                    </p>
+                    </div>
+            </div>
+           
+        </div>
+    
+    <div id="login-Signup-Container">
+       <div id="signUp-container">
+          <p>Sign up</p>
+          <p class="err-mess" id="err-mess-id"></p>
+          <form id="form-signup">
+              <label for="fname">Name</label><br>
+              <input type="text" name="fname" id="fname" required > <br><br>
+              <label for="username">Username</label><br>
+              <input type="text" name="username" id="username" required><br><br>
+              <label for="email">Email Address</label><br>
+            <input type="email" name="email" id="email" required><br><br>
+            <label for="pass">Password</label><br>
+            <input type="password" name="password" id="pass" required><br><br>
+            <label for="confirm-Password">Confirm password</label>
+            <input type="text" name="confirmPassword" required id="confirm-Password"><br><br>
+            <label for="">Gender</label><br>
+            <input type="radio" name="gender" required id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" required id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender"  required id="other" value="other">
+             <label for="other">Other</label><br><br>
+             <label for="dob">Date of Birth</label>
+             <br>
+            <input type="date" required name="dob" id="dob">
+          
+             <hr>
+             <button type="reset" class="reset1" id="signup-reset">Reset</button>
+             <button type="submit" class="submit1" id="signup-submit">Sign Up</button>
+             
+             
+          </form>
+       </div>
+       <div id="login-container">
+          <p>
+              Login
+          </p>
+          <p class="err-mess" id="err-mess-id1"></p>
+          <form id="form-login">
+              <label for="email1">Email Address</label><br>
+            <input type="email" name="email" id="email1"><br><br>
+            <label for="pass1">Password</label><br>
+            
+            <input type="password" name="password" id="pass1"><br><br>
+            <button type="reset" class="reset1" id="login-reset">Reset</button>
+            <button type="submit" class="submit1" id="login-submit">Log in</button>
+          </form>
+       </div>
+    </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAGSxDrScQ6WQQcK-KcBJdWWEiYx0R9zQQ",
+    authDomain: "project1-e54d9.firebaseapp.com",
+    projectId: "project1-e54d9",
+    storageBucket: "project1-e54d9.appspot.com",
+    messagingSenderId: "704925816487",
+    appId: "1:704925816487:web:08c83e9b9edd3d04b56d82"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db =firebase.firestore();
+  const auth = firebase.auth();
+  const db1 = firebase.database();
+</script>
+   <script src="auth.js"></script>
+</html>

@@ -1,0 +1,335 @@
+@keyframes move1{
+    from{}
+    to{
+        transition: transform 0.5s;
+        transition-timing-function: 0.5s;
+        transform: translateY(+5px);
+        color: #74C912;
+        transform: scale(2);
+    }
+}
+#C{
+    animation-name: move1;
+    animation-duration: 0.4s;
+    animation-direction: alternate-reverse;
+   
+}
+@keyframes move2{
+    from{}
+    to{
+        transition: transform 0.5s;
+        transition-timing-function: 0.5s;
+        transform: translateY(+5px);
+        color: #74C912;
+    }
+}
+#H{
+    animation-name: move2;
+    animation-duration: 0.4s;
+    animation-delay: 0.3s;
+    animation-direction: alternate-reverse;
+    
+}
+@keyframes move3{
+    from{}
+    to{
+        transition: transform 0.5s;
+        transition-timing-function: 0.5s;
+        transform: translateY(+5px);
+        color: #74C912;
+    }
+}
+#E1{
+    animation-name: move3;
+    animation-duration: 0.4s;
+    animation-delay: 0.6s;
+    animation-direction: alternate-reverse;
+}
+@keyframes move4{
+    from{}
+    to{
+        transition: transform 0.5s;
+        transition-timing-function: 0.5s;
+        transform: translateY(+5px);
+        color: #74C912;
+    }
+}
+#E2{
+    animation-name: move4;
+    animation-duration: 0.4s;
+    animation-delay: 0.9s;
+    animation-direction: alternate-reverse;
+}
+@keyframes move5{
+    from{}
+    to{
+        transition: transform 0.5s;
+        transition-timing-function: 0.5s;
+        transform: translateY(+5px);
+        color: #74C912;
+    }
+}
+#M{
+    animation-name: move5;
+    animation-duration: 0.4s;
+    animation-delay: 1.2s;
+    animation-direction: alternate-reverse;
+}
+@keyframes move6{
+    from{}
+    to{
+        transition: transform 0.5s;
+        transition-timing-function: 0.5s;
+        transform: translateY(+5px);
+        color: #74C912;
+    }
+}
+#S{
+    animation-name: move6;
+    animation-duration: 0.4s;
+    animation-delay: 1.5s;
+    animation-direction: alternate-reverse;
+}
+@keyframes move7{
+    from{}
+    to{
+        transition: transform 0.5s;
+        transition-timing-function: 0.5s;
+        transform: translateY(+5px);
+        color: #74C912;
+    }
+}
+#T{
+    animation-name: move7;
+    animation-duration: 0.4s;
+    animation-delay: 1.8s;
+    animation-direction: alternate-reverse;
+}
+@keyframes move8{
+    from{}
+    to{
+        transition: transform 0.5s;
+        transition-timing-function: 0.5s;
+        transform: translateY(+5px);
+        color: #74C912;
+    }
+}
+#A{
+    animation-name: move8;
+    animation-duration: 0.4s;
+    animation-delay: 2.1s;
+    animation-direction: alternate-reverse;
+}
+@keyframes move9{
+    from{}
+    to{
+        transition: transform 0.5s;
+        transition-timing-function: 0.5s;
+        transform: translateY(+5px);
+        color: #74C912;
+    }
+}
+#L{
+    animation-name: move9;
+    animation-duration: 0.4s;
+    animation-delay: 2.4s;
+    animation-direction: alternate-reverse;
+}
+@keyframes move10{
+    from{}
+    to{
+        transition: transform 0.5s;
+        transition-timing-function: 0.5s;
+        transform: translateY(+5px);
+        color: #74C912;
+    }
+}
+#k1{
+    animation-name: move10;
+    animation-duration: 0.4s;
+    animation-delay: 2.8s;
+    animation-direction: alternate-reverse;
+}
+#C:hover ,
+#C:hover ~ #H,
+#C:hover ~ #E1,
+#C:hover ~ #E2,
+#C:hover ~ #M,
+#C:hover ~ #S,
+#C:hover ~ #T,
+#C:hover ~ #A,
+#C:hover ~ #L,
+#C:hover ~ #K1,
+#H:hover ,
+#H:hover ~ #C,
+#H:hover ~ #E1,
+#H:hover ~ #E2,
+#H:hover ~ #M,
+#H:hover ~ #S,
+#H:hover ~ #T,
+#H:hover ~ #A,
+#H:hover ~ #L,
+#H:hover ~ #K1,
+#E1:hover ,
+#E1:hover ~ #H,
+#E1:hover ~ #C,
+#E1:hover ~ #E2,
+#E1:hover ~ #M,
+#E1:hover ~ #S,
+#E1:hover ~ #T,
+#E1:hover ~ #A,
+#E1:hover ~ #L,
+#E1:hover ~ #K1,
+#E2:hover ,
+#E2:hover ~ #H,
+#E2:hover ~ #E1,
+#E2:hover ~ #C,
+#E2:hover ~ #M,
+#E2:hover ~ #S,
+#E2:hover ~ #T,
+#E2:hover ~ #A,
+#E2:hover ~ #L,
+#E2:hover ~ #K1,
+#M:hover ,
+#M:hover ~ #H,
+#M:hover ~ #E1,
+#M:hover ~ #E2,
+#M:hover ~ #C,
+#M:hover ~ #S,
+#M:hover ~ #T,
+#M:hover ~ #A,
+#M:hover ~ #L,
+#M:hover ~ #K1,
+#S:hover ,
+#S:hover ~ #H,
+#S:hover ~ #E1,
+#S:hover ~ #E2,
+#S:hover ~ #M,
+#S:hover ~ #C,
+#S:hover ~ #T,
+#S:hover ~ #A,
+#S:hover ~ #L,
+#S:hover ~ #K1,
+#T:hover ,
+#T:hover ~ #H,
+#T:hover ~ #E1,
+#T:hover ~ #E2,
+#T:hover ~ #M,
+#T:hover ~ #S,
+#T:hover ~ #C,
+#T:hover ~ #A,
+#T:hover ~ #L,
+#T:hover ~ #K1,
+#A:hover ,
+#A:hover ~ #H,
+#A:hover ~ #E1,
+#A:hover ~ #E2,
+#A:hover ~ #M,
+#A:hover ~ #S,
+#A:hover ~ #T,
+#A:hover ~ #C,
+#A:hover ~ #L,
+#A:hover ~ #K1,
+#L:hover ,
+#L:hover ~ #H,
+#L:hover ~ #E1,
+#L:hover ~ #E2,
+#L:hover ~ #M,
+#L:hover ~ #S,
+#L:hover ~ #T,
+#L:hover ~ #A,
+#L:hover ~ #C,
+#L:hover ~ #K1,
+
+#K1:hover ~ #H,
+#K1:hover ~ #E1,
+#K1:hover ~ #E2,
+#K1:hover ~ #M,
+#K1:hover ~ #S,
+#K1:hover ~ #T,
+#K1:hover ~ #A,
+#K1:hover ~ #L,
+#K1:hover ~ #C,
+#K1:hover {
+    text-shadow: 1px 1px 2px rgb(147, 6, 6), 0 0 25px rgb(243, 65, 65), 0 0 5px rgb(236, 49, 133);
+}
+
+
+
+
+
+
+
+
+
+
+.containerName{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  align-items: center;
+}
+
+#logoText-container{
+    display: block;
+}
+.logoText{
+    display: inline-block;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    margin-top: 15%;
+}
+/* blue color gradient   #1BCDF7 - #18BFF5 */
+/* green color gradient #D3ED35 - #74C912 */
+#logoText-container{
+    text-align: center;
+    color: #1BCDF7;
+    font-weight: 700;
+    font-size: 25px;
+}
+#box-container{
+    height: 100vh;
+    text-align: center;
+}
+@keyframes fillbar {
+    0%{
+        width: 0px;
+   }
+   20%{
+      
+       width: 100px;
+       
+   }
+   40%{
+       width: 150px;
+   }
+   70%{
+       width: 400px;
+   }
+   100%{
+       width: 500px;
+   } 
+  
+}
+
+.progress-bar{
+   width: 0px;
+   height: 4px;
+   background-color: #74C912;
+    animation: fillbar 5s; 
+   border-radius: 50px;
+}
+.progresscontainer{
+    background-color: #1BCDF7;
+    text-align: center;
+    width: 500px;
+    height: 4px;
+   border-radius: 50px;
+   margin-left: 35%; 
+   margin-top: 30px;
+   margin-bottom: 30px;
+}

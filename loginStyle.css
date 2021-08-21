@@ -1,0 +1,185 @@
+body{
+    /* background: linear-gradient(#5fd1e7 5%,#18BFF5 5%); */
+    background-image: radial-gradient(#c7eaee 50%,#b1ecff);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+   }
+   
+#login-Signup-Container{
+   
+    background: radial-gradient(#d6f1f1 40%, #b4e9fd);
+    width: 800px;
+    position: relative;
+    height: 600px;
+    margin-top: 5%;
+    margin-left: 20%;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+}
+#signUp-container{
+   
+
+     width: 400px;
+     border-top-left-radius: 25px;
+     border-bottom-left-radius: 25px;
+    display: flexbox;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#login-container{
+  
+   width: 400px;
+   border-top-right-radius: 25px;
+     border-bottom-right-radius: 25px;
+   padding-left: 10%;
+   margin-left: 2px;
+   padding-right: 10%;
+   display: flexbox;
+
+}
+hr{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+p{
+    font-size: 25px;
+    font-family: monospace;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 1000;
+}
+label{
+  font-family: monospace;
+  font-weight: 1000;
+}
+input[type=text],input[type=email],input[type=password],input[type=date] {
+  width: 100%;
+  padding: 4px 5px;
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  color: #343034;
+  border-color: #b1ecff;
+  box-sizing: border-box;
+}
+.submit1{
+  color: #089d32;
+  background-color: white;
+  border: 1px solid #089d32 ;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 300;
+  width: 200px;
+  max-width: 100px;
+  min-width: 100px;
+  padding: 10px;
+ float: right;
+}
+
+.submit1:hover{
+  color: white;
+  background-color: #089d32;
+   font-weight: 400;
+  box-shadow: 0 0 15px #2ba805;
+  cursor: pointer;
+  text-shadow: 0 0 1px #0fa414, 0 0 10px #fcfcff;
+  transition: transform 2;
+  transform: translate(5px,5px);
+ 
+}
+.reset1{
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 300;
+  width: 200px;
+  max-width: 100px;
+  min-width: 100px;
+  padding: 10px;
+  float: left;
+}
+
+.reset1:hover{
+  color: white;
+  background-color: red;
+   font-weight: 400;
+  box-shadow: 0 0 15px #ec0b29;
+  cursor: pointer;
+  text-shadow: 0 0 1px #d50a14, 0 0 10px #fcfcff;
+  transition: transform 2;
+  transform: translate(5px,5px);
+}
+.page-container{
+  display: block;
+}
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+   height: 100px;
+   width: 100%;
+  
+   background-color: #089d32;
+   opacity: 100%;
+}
+#logo-at-nav{
+    border-radius: 50%;
+}
+.left-nav{
+    float: left;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.nav-logo{
+    display: flexbox;
+  
+}
+.logo-name{
+    display: flexbox;
+    margin-left: 50px;
+}
+.right-nav{
+  display: flex;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.nav-btns{
+    display: flexbox;
+    margin-right: 50px;
+}
+.left-nav p{
+  color: white;
+  text-shadow: 0 0 1px #0fa414, 0 0 10px #fcfcff;
+  font-size: 25px;
+  
+}
+.right-nav p{
+    color:#b1ecff;
+}
+.right-nav p:hover{
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 0 1px #0fa414, 0 0 10px #fcfcff;
+    transition: transform 1s;
+    transform: scale(1.5);
+    
+}
+.err-mess{
+  width: auto;
+  font-size: 10px;
+  color: rgb(182, 16, 43);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

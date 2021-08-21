@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chat-box.css">
+   
+    <script src="https://kit.fontawesome.com/a7eb2a755a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <main>
+      <div class="nav-bar">
+        <div class="left-nav">
+            <div class="nav-logo">
+                <img src="logo.png" alt="logo" id="logo-at-nav" height="80px" width="80px">
+             </div>
+             <div class="logo-name">
+                 <p>CheemsTalk</p>
+             </div>
+        </div>
+        <div class="right-nav">
+            <div class="nav-btns">
+              <p>Home</p>
+            </div>
+            <div class="nav-btns">
+              <p>About us</p>
+            </div>
+            <div class="nav-btns">
+            <p id="sign-out" onclick="signout()">
+                Sign out
+            </p>
+            </div>
+            <div class="nav-btns">
+              <i class="fas fa-solid fa-user fa-2x" id="user-icon"></i>
+              </div>
+        </div>
+       
+    </div>
+      <div id="container">
+          <div id="chat">
+           
+          </div>
+         <div class="send-bar">
+             <input type="text" name="mess" id="input-data">
+             <button id="btn">send</button>
+         </div>
+      </div>  
+    </main>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAGSxDrScQ6WQQcK-KcBJdWWEiYx0R9zQQ",
+    authDomain: "project1-e54d9.firebaseapp.com",
+    projectId: "project1-e54d9",
+    storageBucket: "project1-e54d9.appspot.com",
+    messagingSenderId: "704925816487",
+    appId: "1:704925816487:web:08c83e9b9edd3d04b56d82"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db =firebase.firestore();
+  const auth = firebase.auth();
+  const db1=firebase.database();
+</script>
+<script src="chat-box.js"></script>
+</html>
